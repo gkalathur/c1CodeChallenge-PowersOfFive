@@ -88,7 +88,25 @@ public class SolutionTest {
         assertEquals(3, solution.getMin(input));
     }
 
+    @Test
+    public void test12(){
+    	String input = "101001";
+    	assertEquals(-1,solution.getMin(input));
+    }
 
+    @Test
+    public void test13(){
+        String input = "111001";
+        System.out.println("test13: " +solution.getMin(input));
+        assertEquals(2, solution.getMin(input));
+    }
+    
+    @Test
+    public void test14(){
+        String input = "1001000110000100111001110010101";
+        System.out.println("test13: " +solution.getMin(input));
+        assertEquals(1, solution.getMin(input));
+    }
 
 
 }
